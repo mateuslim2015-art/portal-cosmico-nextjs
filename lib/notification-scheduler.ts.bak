@@ -1,0 +1,329 @@
+
+import cron from 'node-cron';
+import { PrismaClient } from '@prisma/client';
+import webpush from 'web-push';
+import { getNotificationMessage } from './notification-messages';
+
+const prisma = new PrismaClient();
+
+// Configurar VAPID keys
+const vapidPublicKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY || '';
+const vapidPrivateKey = process.env.VAPID_PRIVATE_KEY || '';
+const vapidEmail = process.env.VAPID_EMAIL || 'mailto:contato@portalcosmico.com';
+
+if (vapidPublicKey && vapidPrivateKey) {
+  webpush.setVapidDetails(vapidEmail, vapidPublicKey, vapidPrivateKey);
+}
+
+interface NotificationPayload {
+  title: string;
+  body: string;
+  icon: string;
+  badge: string;
+  data: {
+    url: string;
+    timestamp: number;
+  };
+}
+
+// Função para enviar notificação
+async function sendNotification(
+  subscription: any,
+  payload: NotificationPayload,
+  userId: string,
+  type: string
+) {
+  try {
+    await webpush.sendNotification(
+      subscription,
+      JSON.stringify(payload)
+    );
+
+    // Registrar envio no analytics
+    await prisma.notificationAnalytics.create({
+      data: {
+        userId,
+        type,
+        title: payload.title,
+        sentAt: new Date(),
+        delivered: true,
+      },
+    });
+
+    return { success: true };
+  } catch (error: any) {
+    console.error('Erro ao enviar notificação:', error);
+
+    // Se a subscrição expirou (410), removê-la
+    if (error.statusCode === 410) {
+      await prisma.notificationSubscription.delete({
+        where: { userId },
+      });
+    }
+
+    return { success: false, error };
+  }
+}
+
+// Função para obter usuários elegíveis para notificação
+async function getEligibleUsers() {
+  const now = new Date();
+  const users = await prisma.notificationSubscription.findMany({
+    where: {
+      enabled: true,
+      user: {
+        subscriptionStatus: 'active',
+      },
+    },
+    include: {
+      user: true,
+      preferences: true,
+    },
+  });
+
+  // Filtrar usuários baseado em preferências e última notificação
+  const eligible = [];
+  for (const sub of users) {
+    const prefs = sub.preferences;
+    if (!prefs) continue;
+
+    // Verificar horário preferido
+    const currentHour = now.getHours();
+    const isInPreferredTime = 
+      (prefs.morningEnabled && currentHour >= 6 && currentHour < 12) ||
+      (prefs.afternoonEnabled && currentHour >= 12 && currentHour < 18) ||
+      (prefs.eveningEnabled && currentHour >= 18 && currentHour < 23);
+
+    if (!isInPreferredTime) continue;
+
+    // Verificar frequência (não enviar mais de 3 por dia)
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    
+    const sentToday = await prisma.notificationAnalytics.count({
+      where: {
+        userId: sub.userId,
+        sentAt: {
+          gte: today,
+        },
+      },
+    });
+
+    if (sentToday >= 3) continue;
+
+    // Verificar cooldown (mínimo 3 horas entre notificações)
+    const lastNotification = await prisma.notificationAnalytics.findFirst({
+      where: { userId: sub.userId },
+      orderBy: { sentAt: 'desc' },
+    });
+
+    if (lastNotification) {
+      const hoursSinceLastNotification = 
+        (now.getTime() - lastNotification.sentAt.getTime()) / (1000 * 60 * 60);
+      
+      if (hoursSinceLastNotification < 3) continue;
+    }
+
+    eligible.push(sub);
+  }
+
+  return eligible;
+}
+
+// Função para enviar notificações em massa
+export async function sendScheduledNotifications() {
+  console.log('🔔 Iniciando envio de notificações agendadas...');
+  
+  const eligibleUsers = await getEligibleUsers();
+  console.log(`📊 ${eligibleUsers.length} usuários elegíveis`);
+
+  let successCount = 0;
+  let failCount = 0;
+
+  for (const sub of eligibleUsers) {
+    try {
+      // Selecionar tipo de notificação baseado em preferências e comportamento
+      const notificationType = await selectNotificationType(sub.userId, sub.preferences);
+      
+      const message = getNotificationMessage(notificationType);
+      
+      const payload: NotificationPayload = {
+        title: message.title,
+        body: message.body,
+        icon: '/logo.png',
+        badge: '/favicon.svg',
+        data: {
+          url: message.url,
+          timestamp: Date.now(),
+        },
+      };
+
+      const result = await sendNotification(
+        JSON.parse(sub.subscription),
+        payload,
+        sub.userId,
+        notificationType
+      );
+
+      if (result.success) {
+        successCount++;
+      } else {
+        failCount++;
+      }
+
+      // Delay entre envios para evitar rate limiting
+      await new Promise(resolve => setTimeout(resolve, 100));
+    } catch (error) {
+      console.error(`Erro ao processar usuário ${sub.userId}:`, error);
+      failCount++;
+    }
+  }
+
+  console.log(`✅ Envios concluídos: ${successCount} sucesso, ${failCount} falhas`);
+  
+  return {
+    total: eligibleUsers.length,
+    success: successCount,
+    failed: failCount,
+  };
+}
+
+// Função para selecionar tipo de notificação baseado em comportamento
+async function selectNotificationType(
+  userId: string,
+  preferences: any
+): Promise<string> {
+  // Buscar últimas leituras do usuário
+  const recentReadings = await prisma.reading.findMany({
+    where: { userId },
+    orderBy: { createdAt: 'desc' },
+    take: 5,
+  });
+
+  const lastReading = recentReadings[0];
+  const daysSinceLastReading = lastReading
+    ? (Date.now() - lastReading.createdAt.getTime()) / (1000 * 60 * 60 * 24)
+    : 999;
+
+  // Lógica de triggers inteligentes
+  if (daysSinceLastReading > 3) {
+    // Usuário inativo - engajamento
+    return preferences?.dailyCardEnabled ? 'daily_card' : 'engagement';
+  } else if (daysSinceLastReading < 1 && recentReadings.length > 2) {
+    // Usuário muito ativo - conteúdo educacional
+    return preferences?.studyRemindersEnabled ? 'study_reminder' : 'card_meaning';
+  } else {
+    // Usuário moderado - mix de conteúdo
+    const types = [];
+    if (preferences?.dailyCardEnabled) types.push('daily_card');
+    if (preferences?.studyRemindersEnabled) types.push('study_reminder');
+    if (preferences?.readingRemindersEnabled) types.push('reading_reminder');
+    types.push('tip', 'card_meaning');
+    
+    return types[Math.floor(Math.random() * types.length)];
+  }
+}
+
+// Função para enviar notificação de comportamento específico
+export async function sendBehaviorTriggeredNotification(
+  userId: string,
+  triggerType: 'first_reading' | 'streak_achievement' | 'upgrade_prompt' | 'abandoned_reading'
+) {
+  try {
+    const subscription = await prisma.notificationSubscription.findUnique({
+      where: { userId },
+      include: { preferences: true },
+    });
+
+    if (!subscription || !subscription.enabled) {
+      return { success: false, reason: 'subscription_disabled' };
+    }
+
+    let message;
+    switch (triggerType) {
+      case 'first_reading':
+        message = {
+          title: '🎉 Parabéns pela sua primeira leitura!',
+          body: 'Continue sua jornada espiritual. Explore a biblioteca de cartas e aprofunde seus conhecimentos.',
+          url: '/cards',
+        };
+        break;
+      case 'streak_achievement':
+        message = {
+          title: '🔥 Sequência de 7 dias!',
+          body: 'Incrível! Você está construindo um hábito poderoso. Continue sua prática diária.',
+          url: '/dashboard',
+        };
+        break;
+      case 'upgrade_prompt':
+        message = {
+          title: '✨ Desbloqueie Mais Oráculos',
+          body: 'Seu teste está terminando. Assine agora e acesse Baralho Cigano, Runas e I-Ching!',
+          url: '/dashboard',
+        };
+        break;
+      case 'abandoned_reading':
+        message = {
+          title: '🔮 Sua leitura está esperando',
+          body: 'Você tem uma leitura incompleta. Volte e descubra o que as cartas querem revelar.',
+          url: '/reading',
+        };
+        break;
+    }
+
+    const payload: NotificationPayload = {
+      title: message.title,
+      body: message.body,
+      icon: '/logo.png',
+      badge: '/favicon.svg',
+      data: {
+        url: message.url,
+        timestamp: Date.now(),
+      },
+    };
+
+    return await sendNotification(
+      JSON.parse(subscription.subscription),
+      payload,
+      userId,
+      triggerType
+    );
+  } catch (error) {
+    console.error('Erro ao enviar notificação de comportamento:', error);
+    return { success: false, error };
+  }
+}
+
+// Agendar envios automáticos
+let jobsInitialized = false;
+
+export function initializeNotificationScheduler() {
+  if (jobsInitialized) {
+    console.log('⚠️ Scheduler já inicializado');
+    return;
+  }
+
+  console.log('🚀 Inicializando scheduler de notificações...');
+
+  // Envio matinal: 8h (horário do servidor)
+  cron.schedule('0 8 * * *', async () => {
+    console.log('☀️ Executando envio matinal...');
+    await sendScheduledNotifications();
+  });
+
+  // Envio tarde: 14h (horário do servidor)
+  cron.schedule('0 14 * * *', async () => {
+    console.log('🌤️ Executando envio da tarde...');
+    await sendScheduledNotifications();
+  });
+
+  // Envio noturno: 20h (horário do servidor)
+  cron.schedule('0 20 * * *', async () => {
+    console.log('🌙 Executando envio noturno...');
+    await sendScheduledNotifications();
+  });
+
+  jobsInitialized = true;
+  console.log('✅ Scheduler inicializado com sucesso!');
+  console.log('📅 Horários agendados: 8h, 14h, 20h');
+}

@@ -1,0 +1,1054 @@
+
+> app@ dev /home/ubuntu/portal_cosmico/nextjs_space
+> next dev
+
+  ▲ Next.js 14.2.28
+  - Local:        http://localhost:3000
+  - Environments: .env
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+ ✓ Starting...
+ ✓ Ready in 1973ms
+ ○ Compiling /ranking ...
+ ✓ Compiled /ranking in 4.8s (1340 modules)
+Notification scheduler desabilitado temporariamente
+ GET /ranking 200 in 5408ms
+ ✓ Compiled in 702ms (677 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 2.4s (1656 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET / 307 in 2710ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 763ms (1723 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard 200 in 1032ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 798ms (1036 modules)
+ ✓ Compiled (1038 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/daily-challenge 200 in 1184ms
+ GET /api/daily-challenge 200 in 15ms
+ GET /api/daily-challenge 200 in 14ms
+ GET /api/daily-challenge 200 in 14ms
+ GET /api/auth/session 200 in 1443ms
+ GET /api/auth/session 200 in 32ms
+ ✓ Compiled /api/ranking/my-position in 207ms (1041 modules)
+ ✓ Compiled (1043 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/ranking/my-position?type=WEEKLY&category=XP 200 in 460ms
+ GET /api/ranking?type=WEEKLY&category=XP&limit=100 200 in 468ms
+ GET /api/ranking?type=WEEKLY&category=XP&limit=100 200 in 24ms
+ GET /api/ranking/my-position?type=WEEKLY&category=XP 200 in 25ms
+ GET /api/auth/session 200 in 51ms
+ GET /dashboard 200 in 218ms
+ GET /api/daily-challenge 200 in 35ms
+ GET /api/auth/session 200 in 39ms
+ GET /api/daily-challenge 200 in 15ms
+ GET /api/auth/session 200 in 13ms
+ GET /api/daily-challenge 200 in 15ms
+ GET /api/daily-challenge 200 in 27ms
+ ○ Compiling /badges ...
+ ✓ Compiled /badges in 1241ms (1727 modules)
+ ✓ Compiled /api/badges in 431ms (1003 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🏆 Badge desbloqueado: Primeiro Passo (+100 XP, +3 cristais)
+🏆 Badge desbloqueado: Vidente Iniciante (+400 XP, +10 cristais)
+🏆 Badge desbloqueado: Primeira Consulta (+150 XP, +5 cristais)
+ GET /api/badges 200 in 600ms
+ GET /api/badges 200 in 50ms
+ GET /api/daily-challenge 200 in 24ms
+ GET /api/daily-challenge 200 in 13ms
+ ○ Compiling /missions ...
+ ✓ Compiled /missions in 610ms (1750 modules)
+ ✓ Compiled /api/missions in 219ms (1015 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/missions 200 in 311ms
+ GET /api/missions 200 in 16ms
+ GET /api/daily-challenge 200 in 31ms
+ GET /api/daily-challenge 200 in 15ms
+ ✓ Compiled /shop in 409ms (1768 modules)
+ ✓ Compiled /api/shop in 270ms (1026 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/shop 200 in 345ms
+ GET /api/shop 200 in 17ms
+ GET /api/daily-challenge 200 in 32ms
+ GET /api/daily-challenge 200 in 17ms
+ GET /api/shop 200 in 22ms
+ GET /api/shop 200 in 25ms
+ GET /api/daily-challenge 200 in 19ms
+ GET /api/daily-challenge 200 in 18ms
+ ✓ Compiled /api/ranking/my-position in 211ms (1024 modules)
+ ✓ Compiled (1026 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/ranking?type=WEEKLY&category=XP&limit=100 200 in 627ms
+ GET /api/ranking/my-position?type=WEEKLY&category=XP 200 in 627ms
+ GET /api/ranking?type=WEEKLY&category=XP&limit=100 200 in 28ms
+ GET /api/ranking/my-position?type=WEEKLY&category=XP 200 in 29ms
+ GET /api/daily-challenge 200 in 28ms
+ GET /api/daily-challenge 200 in 19ms
+ ✓ Compiled in 1133ms (758 modules)
+ GET /dashboard?_rsc=1jqx0 200 in 40ms
+ ✓ Compiled in 978ms (1770 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 52ms
+ GET /dashboard?_rsc=1jqx0 200 in 28ms
+ ✓ Compiled in 1034ms (1768 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 485ms
+ GET /dashboard?_rsc=1jqx0 200 in 23ms
+ ✓ Compiled in 1266ms (1782 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 39ms
+ GET /dashboard?_rsc=1jqx0 200 in 26ms
+ ✓ Compiled in 1437ms (1734 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 520ms
+ GET /dashboard?_rsc=1jqx0 200 in 30ms
+ ✓ Compiled in 1719ms (1748 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 52ms
+ ○ Compiling /practice ...
+ ✓ Compiled /practice in 1034ms (1742 modules)
+ GET /practice 200 in 1199ms
+ ⨯ ./lib/practice-service.ts:2:1
+Module not found: Can't resolve 'openai'
+[0m [90m 1 |[39m [36mimport[39m { prisma } [36mfrom[39m [32m'./db'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mOpenAI[39m [36mfrom[39m [32m'openai'[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 3 |[39m[0m
+[0m [90m 4 |[39m [36mconst[39m openai [33m=[39m [36mnew[39m [33mOpenAI[39m()[0m
+[0m [90m 5 |[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/practice/exercises/route.ts
+ ○ Compiling /api/auth/[...nextauth] ...
+ ⨯ ./lib/practice-service.ts:2:1
+Module not found: Can't resolve 'openai'
+[0m [90m 1 |[39m [36mimport[39m { prisma } [36mfrom[39m [32m'./db'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mOpenAI[39m [36mfrom[39m [32m'openai'[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 3 |[39m[0m
+[0m [90m 4 |[39m [36mconst[39m openai [33m=[39m [36mnew[39m [33mOpenAI[39m()[0m
+[0m [90m 5 |[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/practice/exercises/route.ts
+ ⨯ ./lib/practice-service.ts:2:1
+Module not found: Can't resolve 'openai'
+[0m [90m 1 |[39m [36mimport[39m { prisma } [36mfrom[39m [32m'./db'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mOpenAI[39m [36mfrom[39m [32m'openai'[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 3 |[39m[0m
+[0m [90m 4 |[39m [36mconst[39m openai [33m=[39m [36mnew[39m [33mOpenAI[39m()[0m
+[0m [90m 5 |[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/practice/exercises/route.ts
+ ⨯ ./lib/practice-service.ts:2:1
+Module not found: Can't resolve 'openai'
+[0m [90m 1 |[39m [36mimport[39m { prisma } [36mfrom[39m [32m'./db'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mOpenAI[39m [36mfrom[39m [32m'openai'[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 3 |[39m[0m
+[0m [90m 4 |[39m [36mconst[39m openai [33m=[39m [36mnew[39m [33mOpenAI[39m()[0m
+[0m [90m 5 |[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/practice/exercises/route.ts
+ ⨯ ./lib/practice-service.ts:2:1
+Module not found: Can't resolve 'openai'
+[0m [90m 1 |[39m [36mimport[39m { prisma } [36mfrom[39m [32m'./db'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mOpenAI[39m [36mfrom[39m [32m'openai'[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 3 |[39m[0m
+[0m [90m 4 |[39m [36mconst[39m openai [33m=[39m [36mnew[39m [33mOpenAI[39m()[0m
+[0m [90m 5 |[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./app/api/practice/exercises/route.ts
+ GET /api/auth/session 500 in 7208ms
+ GET /api/practice/exercises 500 in 7262ms
+ GET /_next/static/webpack/9cd66595a7e61635.webpack.hot-update.json 500 in 5432ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /api/practice/exercises 500 in 249ms
+ GET /_next/static/webpack/60671373691a6c76.webpack.hot-update.json 500 in 95ms
+ GET /api/auth/session 500 in 274ms
+ POST /api/auth/_log 500 in 226ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /dashboard 500 in 208ms
+ GET /api/practice/exercises 500 in 178ms
+ POST /api/auth/_log 500 in 428ms
+ GET /practice 500 in 403ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/ubuntu/portal_cosmico/nextjs_space/.next/cache/webpack/client-development-fallback/0.pack.gz_' -> '/home/ubuntu/portal_cosmico/nextjs_space/.next/cache/webpack/client-development-fallback/0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/ubuntu/portal_cosmico/nextjs_space/.next/cache/webpack/client-development-fallback/0.pack.gz_' -> '/home/ubuntu/portal_cosmico/nextjs_space/.next/cache/webpack/client-development-fallback/0.pack.gz'
+ ✓ Compiled /_error in 1540ms (2112 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/e4a5d54e0b138e04.webpack.hot-update.json 404 in 1541ms
+ GET /practice 200 in 59ms
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 126ms
+ GET /api/auth/session 200 in 66ms
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 79ms
+ GET /api/auth/session 200 in 35ms
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 33ms
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 22ms
+ GET /practice 200 in 36ms
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 26ms
+ GET /api/auth/session 200 in 61ms
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 74ms
+ GET /api/auth/session 200 in 38ms
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 36ms
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 23ms
+ GET /dashboard 200 in 120ms
+ ✓ Compiled /api/daily-challenge in 302ms (1180 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/session 200 in 715ms
+ GET /api/auth/session 200 in 49ms
+ GET /api/daily-challenge 200 in 797ms
+ GET /api/daily-challenge 200 in 22ms
+ GET /api/daily-challenge 200 in 32ms
+ GET /api/daily-challenge 200 in 21ms
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 39ms
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 18ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/ubuntu/portal_cosmico/nextjs_space/.next/cache/webpack/client-development-fallback/0.pack.gz_' -> '/home/ubuntu/portal_cosmico/nextjs_space/.next/cache/webpack/client-development-fallback/0.pack.gz'
+ GET /api/practice/exercises 401 in 25ms
+ ✓ Compiled in 1959ms (2113 modules)
+ GET /practice 200 in 132ms
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 108ms
+ ✓ Compiled /api/auth/[...nextauth] in 255ms (1168 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 607ms
+ GET /api/auth/session 200 in 664ms
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 79ms
+ GET /api/auth/session 200 in 34ms
+Erro ao listar exercícios: PrismaClientValidationError: 
+Invalid `prisma.exercise.findMany()` invocation:
+
+{
+  where: {
+    active: true,
+    ~~~~~~
+?   AND?: ExerciseWhereInput | ExerciseWhereInput[],
+?   OR?: ExerciseWhereInput[],
+?   NOT?: ExerciseWhereInput | ExerciseWhereInput[],
+?   id?: StringFilter | String,
+?   lessonId?: StringNullableFilter | String | Null,
+?   title?: StringFilter | String,
+?   description?: StringNullableFilter | String | Null,
+?   type?: StringFilter | String,
+?   content?: StringFilter | String,
+?   xpReward?: IntFilter | Int,
+?   createdAt?: DateTimeFilter | DateTime,
+?   lesson?: LessonNullableScalarRelationFilter | LessonWhereInput | Null
+  },
+  orderBy: [
+    {
+      order: "asc"
+    },
+    {
+      createdAt: "desc"
+    }
+  ]
+}
+
+Unknown argument `active`. Available options are marked with ?.
+    at An (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:29:1363)
+    at zn.handleRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:7102)
+    at zn.handleAndLogRequestError (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at zn.request (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/@prisma+client@6.7.0_prisma@6.7.0_typescript@5.2.2__typescript@5.2.2/node_modules/@prisma/client/runtime/library.js:130:9778)
+    at async GET (webpack-internal:///(rsc)/./app/api/practice/exercises/route.ts:29:27)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.7.0'
+}
+ GET /api/practice/exercises 500 in 25ms
+ ✓ Compiled in 689ms (2115 modules)
+ ELIFECYCLE  Command failed.
+[?25h

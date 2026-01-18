@@ -1,0 +1,60 @@
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "dev.db" at "file:./dev.db"
+
+
+Error: Prisma schema validation - (validate wasm)
+Error code: P1012
+[1;91merror[0m: [1mNative type Text is not supported for sqlite connector.[0m
+  [1;94m-->[0m  [4mprisma/schema.prisma:50[0m
+[1;94m   | [0m
+[1;94m49 | [0m  suit            String?
+[1;94m50 | [0m  shortMeaning    String        [1;91m@db.Text[0m
+[1;94m   | [0m
+[1;91merror[0m: [1mNative type Text is not supported for sqlite connector.[0m
+  [1;94m-->[0m  [4mprisma/schema.prisma:51[0m
+[1;94m   | [0m
+[1;94m50 | [0m  shortMeaning    String        @db.Text
+[1;94m51 | [0m  upright         String        [1;91m@db.Text[0m
+[1;94m   | [0m
+[1;91merror[0m: [1mNative type Text is not supported for sqlite connector.[0m
+  [1;94m-->[0m  [4mprisma/schema.prisma:52[0m
+[1;94m   | [0m
+[1;94m51 | [0m  upright         String        @db.Text
+[1;94m52 | [0m  reversed        String        [1;91m@db.Text[0m
+[1;94m   | [0m
+[1;91merror[0m: [1mNative type Text is not supported for sqlite connector.[0m
+  [1;94m-->[0m  [4mprisma/schema.prisma:66[0m
+[1;94m   | [0m
+[1;94m65 | [0m  question       String?
+[1;94m66 | [0m  interpretation String        [1;91m@db.Text[0m
+[1;94m   | [0m
+[1;91merror[0m: [1mNative type Text is not supported for sqlite connector.[0m
+  [1;94m-->[0m  [4mprisma/schema.prisma:119[0m
+[1;94m   | [0m
+[1;94m118 | [0m  title       String
+[1;94m119 | [0m  message     String   [1;91m@db.Text[0m
+[1;94m   | [0m
+[1;91merror[0m: [1mNative type Text is not supported for sqlite connector.[0m
+  [1;94m-->[0m  [4mprisma/schema.prisma:120[0m
+[1;94m   | [0m
+[1;94m119 | [0m  message     String   @db.Text
+[1;94m120 | [0m  body        String?  [1;91m@db.Text[0m
+[1;94m   | [0m
+[1;91merror[0m: [1mNative type Text is not supported for sqlite connector.[0m
+  [1;94m-->[0m  [4mprisma/schema.prisma:123[0m
+[1;94m   | [0m
+[1;94m122 | [0m  cardId      String?
+[1;94m123 | [0m  data        String?  [1;91m@db.Text[0m
+[1;94m   | [0m
+[1;91merror[0m: [1mNative type Text is not supported for sqlite connector.[0m
+  [1;94m-->[0m  [4mprisma/schema.prisma:157[0m
+[1;94m   | [0m
+[1;94m156 | [0m  endpoint        String
+[1;94m157 | [0m  keys            String   [1;91m@db.Text[0m
+[1;94m   | [0m
+
+Validation Error Count: 8
+[Context: validate]
+
+Prisma CLI Version : 6.7.0

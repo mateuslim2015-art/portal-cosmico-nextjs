@@ -1,0 +1,611 @@
+
+> app@ dev /home/ubuntu/portal_cosmico/nextjs_space
+> next dev
+
+  ▲ Next.js 14.2.28
+  - Local:        http://localhost:3000
+  - Environments: .env
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 1549ms
+ ○ Compiling / ...
+(node:3047) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ ✓ Compiled / in 6.4s (1069 modules)
+Notification scheduler desabilitado temporariamente
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ ✓ Compiled in 835ms (394 modules)
+ GET / 200 in 7298ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 3.4s (670 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/session 200 in 3927ms
+ GET /api/auth/session 200 in 21ms
+ HEAD / 200 in 206ms
+ GET / 200 in 59ms
+ GET / 200 in 55ms
+ GET /api/auth/session 200 in 23ms
+ GET /api/auth/session 200 in 11ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 639ms (1084 modules)
+ ✓ Compiled /register in 370ms (1096 modules)
+ ✓ Compiled /api/signup in 418ms (721 modules)
+ POST /api/signup 400 in 498ms
+ ✓ Compiled in 784ms (1106 modules)
+ ✓ Compiled /api/signup in 193ms (719 modules)
+ POST /api/signup 201 in 763ms
+ ✓ Compiled /api/auth/[...nextauth] in 190ms (721 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/providers 200 in 295ms
+ GET /api/auth/csrf 200 in 8ms
+ POST /api/auth/callback/credentials 200 in 457ms
+ GET /api/auth/session 200 in 24ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1723ms (1207 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=3y0gy 200 in 61ms
+ ✓ Compiled /api/notifications/preferences in 257ms (767 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/notifications/preferences 200 in 321ms
+ GET /api/notifications/preferences 200 in 12ms
+ ○ Compiling /reading ...
+ ✓ Compiled /reading in 664ms (1232 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /reading?_rsc=apw8h 200 in 28ms
+ GET /reading 200 in 163ms
+ GET /api/auth/session 200 in 56ms
+ GET /api/auth/session 200 in 14ms
+ ✓ Compiled in 949ms (1214 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /reading?_rsc=1qisr 200 in 120ms
+ GET /reading 200 in 128ms
+ ✓ Compiled /api/auth/[...nextauth] in 219ms (752 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/session 200 in 325ms
+ GET /api/auth/session 200 in 10ms
+ ✓ Compiled in 1068ms (1214 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /reading?_rsc=1qisr 200 in 236ms
+ GET /reading 200 in 125ms
+ ✓ Compiled /api/auth/[...nextauth] in 178ms (752 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/session 200 in 292ms
+ GET /api/auth/session 200 in 9ms
+ ○ Compiling /api/reading/interpret ...
+ ✓ Compiled /api/reading/interpret in 701ms (776 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+Reading interpretation error: Error: Falha ao obter interpretação da IA
+    at POST (webpack-internal:///(rsc)/./app/api/reading/interpret/route.ts:101:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/home/ubuntu/portal_cosmico/nextjs_space/node_modules/.pnpm/next@14.2.28_react-dom@18.2.0_react@18.2.0__react@18.2.0/node_modules/next/dist/server/lib/start-server.js:141:13)
+ POST /api/reading/interpret 500 in 1056ms
+ ✓ Compiled in 797ms (1214 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /reading?_rsc=1qisr 200 in 85ms
+ ✓ Compiled in 362ms (466 modules)
+ GET /reading?_rsc=1qisr 200 in 21ms
+ GET /reading 200 in 142ms
+ ✓ Compiled /api/auth/[...nextauth] in 363ms (752 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/session 200 in 496ms
+ GET /api/auth/session 200 in 16ms
+ ✓ Compiled /api/reading/interpret in 357ms (776 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /reading?_rsc=1qisr 200 in 108ms
+API AbacusAI falhou, usando interpretação mock
+ POST /api/reading/interpret 200 in 687ms
+ GET /dashboard?_rsc=3y0gy 200 in 23ms
+ ✓ Compiled /api/notifications/preferences in 405ms (778 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/notifications/preferences 200 in 454ms
+ GET /api/notifications/preferences 200 in 13ms
+ ○ Compiling /readings ...
+ ✓ Compiled /readings in 850ms (1239 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /readings?_rsc=y1dht 200 in 30ms
+ GET /dashboard?_rsc=1gtj6 200 in 24ms
+ GET /api/notifications/preferences 200 in 62ms
+ GET /api/notifications/preferences 200 in 56ms
+ ○ Compiling /cards ...
+ ✓ Compiled /cards in 520ms (1200 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /cards?_rsc=1rgj9 200 in 31ms
+ ○ Compiling / ...
+ ✓ Compiled / in 609ms (757 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ HEAD / 200 in 901ms
+ GET / 200 in 67ms
+ GET / 200 in 66ms
+ ✓ Compiled /api/auth/[...nextauth] in 386ms (761 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/session 200 in 530ms
+ GET / 200 in 482ms
+ GET /api/auth/session 200 in 36ms
+ GET /api/auth/session 200 in 14ms
+ ✓ Compiled /login in 443ms (760 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/providers 200 in 43ms
+ GET /api/auth/csrf 200 in 12ms
+ POST /api/auth/callback/credentials 401 in 18ms
+ GET /api/auth/providers 200 in 29ms
+ GET /api/auth/csrf 200 in 14ms
+ POST /api/auth/callback/credentials 401 in 14ms
+ GET /api/auth/providers 200 in 30ms
+ GET /api/auth/csrf 200 in 13ms
+ POST /api/auth/callback/credentials 401 in 16ms
+ ✓ Compiled /register in 299ms (742 modules)
+ ○ Compiling /api/signup ...
+ ✓ Compiled /api/signup in 541ms (755 modules)
+ POST /api/signup 201 in 1060ms
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/providers 200 in 38ms
+ GET /api/auth/csrf 200 in 17ms
+ POST /api/auth/callback/credentials 200 in 445ms
+ GET /api/auth/session 200 in 34ms
+ ✓ Compiled /dashboard in 317ms (780 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=3y0gy 200 in 30ms
+ ✓ Compiled /api/notifications/preferences in 327ms (782 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/notifications/preferences 200 in 384ms
+ GET /api/notifications/preferences 200 in 14ms
+ GET /api/auth/session 200 in 38ms
+ GET /api/auth/session 200 in 30ms
+ GET /cards?_rsc=1rgj9 200 in 23ms
+ GET /api/auth/session 200 in 33ms
+ GET /api/auth/session 200 in 31ms
+ GET /api/notifications/preferences 200 in 18ms
+ GET /api/notifications/preferences 200 in 15ms
+ ✓ Compiled /reading in 222ms (787 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /reading?_rsc=apw8h 200 in 33ms
+ ○ Compiling /api/reading/interpret ...
+ ✓ Compiled /api/reading/interpret in 616ms (776 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+API AbacusAI falhou, usando interpretação mock
+ POST /api/reading/interpret 200 in 934ms
+ GET /dashboard?_rsc=1gtj6 200 in 41ms
+ ✓ Compiled /api/notifications/preferences in 197ms (778 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/notifications/preferences 200 in 253ms
+ GET /api/notifications/preferences 200 in 20ms
+ GET /reading?_rsc=1xyry 200 in 30ms
+ GET /api/notifications/preferences 200 in 19ms
+ GET /api/notifications/preferences 200 in 17ms
+ GET /reading?_rsc=1xyry 200 in 24ms
+API AbacusAI falhou, usando interpretação mock
+ POST /api/reading/interpret 200 in 216ms
+ GET /api/notifications/preferences 200 in 18ms
+ GET /api/notifications/preferences 200 in 18ms
+ ✓ Compiled /readings in 360ms (783 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /readings?_rsc=y1dht 200 in 32ms
+ GET /api/notifications/preferences 200 in 22ms
+ GET /api/notifications/preferences 200 in 18ms
+ ✓ Compiled /api/auth/[...nextauth] in 313ms (735 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/session 200 in 412ms
+ GET /login 200 in 163ms
+ GET /api/auth/session 200 in 36ms
+ GET /api/auth/session 200 in 15ms
+ GET /api/auth/providers 200 in 32ms
+ GET /api/auth/csrf 200 in 19ms
+ POST /api/auth/callback/credentials 401 in 18ms
+ GET /login 200 in 40ms
+ GET /api/auth/session 200 in 32ms
+ GET /api/auth/session 200 in 14ms
+ GET /api/auth/providers 200 in 40ms
+ GET /api/auth/csrf 200 in 15ms
+ POST /api/auth/callback/credentials 200 in 138ms
+ GET /api/auth/session 200 in 16ms
+ GET /dashboard?_rsc=3y0gy 200 in 21ms
+ GET /api/notifications/preferences 200 in 29ms
+ GET /api/notifications/preferences 200 in 18ms
+ GET /readings?_rsc=y1dht 200 in 19ms
+ ✓ Compiled in 714ms (474 modules)
+ GET /readings?_rsc=et5yy 200 in 31ms
+ ✓ Compiled in 359ms (474 modules)
+ GET /readings?_rsc=et5yy 200 in 22ms
+ ✓ Compiled in 360ms (474 modules)
+ GET /readings?_rsc=et5yy 200 in 40ms
+ GET /reading 307 in 59ms
+ GET /dashboard 200 in 65ms
+ GET /api/notifications/preferences 200 in 54ms
+ GET /api/auth/session 200 in 52ms
+ GET /api/auth/session 200 in 24ms
+ GET /api/notifications/preferences 200 in 38ms
+ GET /api/notifications/preferences 200 in 17ms
+ GET /api/notifications/preferences 200 in 20ms
+ GET /reading?_rsc=apw8h 200 in 17ms
+ GET /api/notifications/preferences 200 in 17ms
+ GET /api/notifications/preferences 200 in 14ms
+ GET /reading 307 in 39ms
+ GET /dashboard 200 in 36ms
+ GET /api/notifications/preferences 200 in 45ms
+ GET /api/auth/session 200 in 39ms
+ GET /api/auth/session 200 in 24ms
+ GET /api/notifications/preferences 200 in 36ms
+ GET /api/notifications/preferences 200 in 17ms
+ GET /api/notifications/preferences 200 in 15ms
+ GET /api/auth/session 200 in 32ms
+ GET /api/auth/session 200 in 33ms
+ GET /api/auth/session 200 in 31ms
+ GET /dashboard 200 in 124ms
+ GET /api/notifications/preferences 200 in 27ms
+ GET /api/auth/session 200 in 41ms
+ GET /api/notifications/preferences 200 in 17ms
+ GET /api/auth/session 200 in 14ms
+ GET /api/notifications/preferences 200 in 18ms
+ GET /api/notifications/preferences 200 in 16ms
+ GET /readings?_rsc=y1dht 200 in 24ms
+ GET /api/notifications/preferences 200 in 19ms
+ GET /api/notifications/preferences 200 in 17ms
+ GET /reading?_rsc=apw8h 200 in 23ms
+ ✓ Compiled /api/reading/interpret in 384ms (737 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 125ms
+ GET /reading?_rsc=1qisr 200 in 26ms
+API AbacusAI falhou, usando interpretação mock
+ POST /api/reading/interpret 200 in 658ms
+ GET /dashboard?_rsc=1gtj6 200 in 29ms
+ GET /api/notifications/preferences 200 in 18ms
+ GET /api/notifications/preferences 200 in 17ms
+ GET /readings?_rsc=iebvm 200 in 26ms
+ GET /api/auth/session 200 in 35ms
+ GET /api/auth/session 200 in 38ms
+ GET /dashboard?_rsc=1gtj6 200 in 26ms
+ GET /api/notifications/preferences 200 in 17ms
+ GET /api/notifications/preferences 200 in 16ms
+ GET /api/auth/session 200 in 41ms
+ ✓ Compiled in 1180ms (1179 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 111ms
+ GET /dashboard?_rsc=1renh 200 in 31ms
+ ✓ Compiled in 342ms (474 modules)
+ GET /dashboard?_rsc=1jqx0 200 in 23ms
+ GET /dashboard?_rsc=1jqx0 200 in 26ms
+ ✓ Compiled in 1012ms (1159 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 55ms
+ GET /dashboard?_rsc=1jqx0 200 in 36ms
+ ✓ Compiled in 849ms (1145 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 602ms
+ GET /dashboard?_rsc=1jqx0 200 in 83ms
+ GET /dashboard?_rsc=1jqx0 200 in 19ms
+ GET /dashboard?_rsc=1jqx0 200 in 23ms
+ ✓ Compiled in 737ms (1145 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 453ms
+ GET /dashboard?_rsc=1jqx0 200 in 77ms
+ GET /dashboard?_rsc=1jqx0 200 in 23ms
+ GET /dashboard?_rsc=1jqx0 200 in 26ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 690ms (691 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/session 200 in 867ms
+ GET /dashboard 200 in 186ms
+ GET /api/auth/session 200 in 117ms
+ GET /api/auth/session 200 in 17ms
+ GET /readings?_rsc=y1dht 200 in 27ms
+ ○ Compiling /api/stripe/create-checkout-session ...
+ ✓ Compiled /api/stripe/create-checkout-session in 1317ms (914 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+Erro ao criar checkout session: StripeAuthenticationError: Invalid API Key provided: sk_test_**********ysQB
+    at res.toJSON.then._Error_js__WEBPACK_IMPORTED_MODULE_0__.StripeAPIError.message (webpack-internal:///(rsc)/./node_modules/.pnpm/stripe@19.1.0_@types+node@20.6.2/node_modules/stripe/esm/RequestSender.js:106:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  type: 'StripeAuthenticationError',
+  raw: {
+    message: 'Invalid API Key provided: sk_test_**********ysQB',
+    type: 'invalid_request_error',
+    headers: {
+      server: 'nginx',
+      date: 'Wed, 29 Oct 2025 22:55:56 GMT',
+      'content-type': 'application/json',
+      'content-length': '124',
+      connection: 'keep-alive',
+      'access-control-allow-credentials': 'true',
+      'access-control-allow-methods': 'GET, HEAD, PUT, PATCH, POST, DELETE',
+      'access-control-allow-origin': '*',
+      'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',
+      'access-control-max-age': '300',
+      'cache-control': 'no-cache, no-store',
+      'content-security-policy': "base-uri 'none'; default-src 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'; worker-src 'none'; upgrade-insecure-requests; report-uri https://q.stripe.com/csp-violation?q=1hFCizx6Cwu4YKyJcI3h-cY5yaiUOVL7urtO5QEihbk4IwdlrxvOenv65VdTm5A4_D6DaG2GvcDDDebi",
+      vary: 'Origin',
+      'www-authenticate': 'Bearer realm="Stripe"',
+      'x-robots-tag': 'none',
+      'x-wc': 'ABHIJ',
+      'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'
+    },
+    statusCode: 401,
+    requestId: undefined
+  },
+  rawType: 'invalid_request_error',
+  code: undefined,
+  doc_url: undefined,
+  param: undefined,
+  detail: undefined,
+  headers: {
+    server: 'nginx',
+    date: 'Wed, 29 Oct 2025 22:55:56 GMT',
+    'content-type': 'application/json',
+    'content-length': '124',
+    connection: 'keep-alive',
+    'access-control-allow-credentials': 'true',
+    'access-control-allow-methods': 'GET, HEAD, PUT, PATCH, POST, DELETE',
+    'access-control-allow-origin': '*',
+    'access-control-expose-headers': 'Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required',
+    'access-control-max-age': '300',
+    'cache-control': 'no-cache, no-store',
+    'content-security-policy': "base-uri 'none'; default-src 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'; worker-src 'none'; upgrade-insecure-requests; report-uri https://q.stripe.com/csp-violation?q=1hFCizx6Cwu4YKyJcI3h-cY5yaiUOVL7urtO5QEihbk4IwdlrxvOenv65VdTm5A4_D6DaG2GvcDDDebi",
+    vary: 'Origin',
+    'www-authenticate': 'Bearer realm="Stripe"',
+    'x-robots-tag': 'none',
+    'x-wc': 'ABHIJ',
+    'strict-transport-security': 'max-age=63072000; includeSubDomains; preload'
+  },
+  requestId: undefined,
+  statusCode: 401,
+  userMessage: undefined,
+  charge: undefined,
+  decline_code: undefined,
+  payment_intent: undefined,
+  payment_method: undefined,
+  payment_method_type: undefined,
+  setup_intent: undefined,
+  source: undefined
+}
+ POST /api/stripe/create-checkout-session 500 in 1499ms
+ ○ Compiling /cards ...
+ ✓ Compiled /cards in 1078ms (710 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /cards 200 in 1356ms
+ ✓ Compiled /api/auth/[...nextauth] in 201ms (714 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/session 200 in 300ms
+ GET /api/auth/session 200 in 20ms
+ GET /cards 200 in 166ms
+ GET /api/auth/session 200 in 38ms
+ GET /api/auth/session 200 in 19ms
+ GET /dashboard?_rsc=3y0gy 200 in 33ms
+ GET /cards?_rsc=ih7bb 200 in 28ms
+ GET /api/auth/csrf 200 in 35ms
+ POST /api/auth/signout 200 in 20ms
+ GET /dashboard 307 in 51ms
+ GET /login 200 in 51ms
+ GET /api/auth/session 200 in 34ms
+ GET /api/auth/session 200 in 18ms
+ GET /api/auth/providers 200 in 41ms
+ GET /api/auth/csrf 200 in 17ms
+ POST /api/auth/callback/credentials 200 in 498ms
+ GET /api/auth/session 200 in 35ms
+ GET /dashboard?_rsc=3y0gy 200 in 32ms
+ GET /dashboard 200 in 70ms
+ GET /api/auth/session 200 in 41ms
+ GET /api/auth/session 200 in 23ms
+ GET /readings 200 in 59ms
+ GET /api/auth/session 200 in 40ms
+ GET /api/auth/session 200 in 18ms
+ GET /reading?_rsc=apw8h 200 in 25ms
+ GET /dashboard?_rsc=3y0gy 200 in 24ms
+ GET /api/auth/session 200 in 36ms
+ GET /dashboard 200 in 73ms
+ GET /api/auth/session 200 in 36ms
+ GET /api/auth/session 200 in 17ms
+ GET /api/auth/session 200 in 37ms
+ ✓ Compiled in 504ms (472 modules)
+ GET /dashboard?_rsc=1jqx0 200 in 33ms
+ GET /dashboard?_rsc=1jqx0 200 in 27ms
+ ✓ Compiled in 1418ms (1178 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 124ms
+ GET /dashboard?_rsc=1jqx0 200 in 31ms
+ ✓ Compiled in 965ms (1178 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 107ms
+ GET /dashboard?_rsc=1jqx0 200 in 30ms
+ ✓ Compiled in 371ms (1164 modules)
+ ✓ Compiled in 807ms (1178 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 55ms
+ GET /dashboard?_rsc=1jqx0 200 in 33ms
+ ✓ Compiled in 620ms (1178 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 101ms
+ GET /dashboard?_rsc=1jqx0 200 in 32ms
+ GET /dashboard 200 in 155ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 542ms (709 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/session 200 in 674ms
+ GET /api/auth/session 200 in 23ms
+ GET /api/auth/session 200 in 47ms
+ GET /api/auth/session 200 in 40ms
+ GET /dashboard 200 in 547ms
+ GET /cards 200 in 87ms
+ GET /api/auth/session 200 in 37ms
+ GET /api/auth/session 200 in 18ms
+ ○ Compiling /cards/[id] ...
+ ✓ Compiled /cards/[id] in 1159ms (1179 modules)
+Notification scheduler desabilitado temporariamente
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /cards/cmhchiopi0001p2q3ktedt5rj?_rsc=td9hd 200 in 85ms
+Notification scheduler desabilitado temporariamente
+ GET /dashboard?_rsc=3y0gy 200 in 35ms
+ ✓ Compiled in 1233ms (1178 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 118ms
+ GET /dashboard?_rsc=1jqx0 200 in 31ms
+ ✓ Compiled in 334ms (477 modules)
+ GET /dashboard?_rsc=1jqx0 200 in 30ms
+ GET /dashboard?_rsc=1jqx0 200 in 28ms
+ ✓ Compiled in 962ms (1178 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 61ms
+ GET /dashboard?_rsc=1jqx0 200 in 29ms
+ ✓ Compiled in 327ms (477 modules)
+ GET /dashboard?_rsc=1jqx0 200 in 29ms
+ GET /dashboard?_rsc=1jqx0 200 in 32ms
+ ✓ Compiled in 373ms (477 modules)
+ GET /dashboard?_rsc=1jqx0 200 in 73ms
+ GET /dashboard?_rsc=1jqx0 200 in 33ms
+ ✓ Compiled in 456ms (477 modules)
+ GET /dashboard?_rsc=1jqx0 200 in 50ms
+ GET /dashboard?_rsc=1jqx0 200 in 35ms
+ ✓ Compiled in 1120ms (1164 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 861ms
+ GET /dashboard?_rsc=1jqx0 200 in 435ms
+ GET /dashboard?_rsc=1jqx0 200 in 33ms
+ GET /dashboard?_rsc=1jqx0 200 in 30ms
+ ✓ Compiled in 179ms (701 modules)
+ ✓ Compiled in 1131ms (1178 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /dashboard?_rsc=1jqx0 200 in 51ms
+ GET /dashboard?_rsc=1jqx0 200 in 38ms
+ GET /dashboard 200 in 151ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 523ms (705 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /api/auth/session 200 in 661ms
+ GET /api/auth/session 200 in 23ms
+ ○ Compiling /study ...
+ ✓ Compiled /study in 684ms (1179 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+ GET /study?_rsc=pc7nw 200 in 39ms
+ ⨯ app/study/page.tsx (15:39) @ findMany
+ ⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at StudyPage (./app/study/page.tsx:25:78)
+digest: "1307572418"
+[0m [90m 13 |[39m[0m
+[0m [90m 14 |[39m   [90m// Buscar oráculos disponíveis[39m[0m
+[0m[31m[1m>[22m[39m[90m 15 |[39m   [36mconst[39m oracles [33m=[39m [36mawait[39m prisma[33m.[39moracle[33m.[39mfindMany({[0m
+[0m [90m    |[39m                                       [31m[1m^[22m[39m[0m
+[0m [90m 16 |[39m     orderBy[33m:[39m { order[33m:[39m [32m'asc'[39m }[33m,[39m[0m
+[0m [90m 17 |[39m     include[33m:[39m {[0m
+[0m [90m 18 |[39m       courses[33m:[39m {[0m
+ ⨯ app/study/page.tsx (15:39) @ findMany
+ ⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at StudyPage (./app/study/page.tsx:25:78)
+digest: "1307572418"
+[0m [90m 13 |[39m[0m
+[0m [90m 14 |[39m   [90m// Buscar oráculos disponíveis[39m[0m
+[0m[31m[1m>[22m[39m[90m 15 |[39m   [36mconst[39m oracles [33m=[39m [36mawait[39m prisma[33m.[39moracle[33m.[39mfindMany({[0m
+[0m [90m    |[39m                                       [31m[1m^[22m[39m[0m
+[0m [90m 16 |[39m     orderBy[33m:[39m { order[33m:[39m [32m'asc'[39m }[33m,[39m[0m
+[0m [90m 17 |[39m     include[33m:[39m {[0m
+[0m [90m 18 |[39m       courses[33m:[39m {[0m
+ ⨯ app/study/page.tsx (15:39) @ findMany
+ ⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at StudyPage (./app/study/page.tsx:25:78)
+digest: "1307572418"
+[0m [90m 13 |[39m[0m
+[0m [90m 14 |[39m   [90m// Buscar oráculos disponíveis[39m[0m
+[0m[31m[1m>[22m[39m[90m 15 |[39m   [36mconst[39m oracles [33m=[39m [36mawait[39m prisma[33m.[39moracle[33m.[39mfindMany({[0m
+[0m [90m    |[39m                                       [31m[1m^[22m[39m[0m
+[0m [90m 16 |[39m     orderBy[33m:[39m { order[33m:[39m [32m'asc'[39m }[33m,[39m[0m
+[0m [90m 17 |[39m     include[33m:[39m {[0m
+[0m [90m 18 |[39m       courses[33m:[39m {[0m
+ GET /study 500 in 153ms
+ GET /study 307 in 82ms
+ GET /study 307 in 81ms
+ GET /login 200 in 91ms
+ GET /login 200 in 94ms
+ ELIFECYCLE  Command failed.
+[?25h
+
+  #  Node.js[3031]: void node::ResetStdio() at ../src/node.cc:760
+  #  Assertion failed: !(err != 0) || (err == -1 && (*__errno_location ()) == 1)
+
+----- Native stack trace -----
+
+ 1: 0xf95cf7 node::Assert(node::AssertionInfo const&) [node]
+ 2: 0xf42264  [node]
+ 3: 0x7fed94645495  [/lib/x86_64-linux-gnu/libc.so.6]
+ 4: 0x7fed94645610 on_exit [/lib/x86_64-linux-gnu/libc.so.6]
+ 5: 0xe98a4f node::DefaultProcessExitHandlerInternal(node::Environment*, node::ExitCode) [node]
+ 6: 0xf01e4f node::Environment::Exit(node::ExitCode) [node]
+ 7: 0x1d755e2  [node]
+
+  #  Node.js[3031]: void node::ResetStdio() at ../src/node.cc:760
+  #  Assertion failed: !(err != 0) || (err == -1 && (*__errno_location ()) == 1)
+
+----- Native stack trace -----
+
+ 1: 0xf95cf7 node::Assert(node::AssertionInfo const&) [node]
+ 2: 0xf42264  [node]
+ 3: 0xf42982 node::TrapWebAssemblyOrContinue(int, siginfo_t*, void*) [node]
+ 4: 0x7fed94642520  [/lib/x86_64-linux-gnu/libc.so.6]

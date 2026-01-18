@@ -1,0 +1,723 @@
+
+generator client {
+    provider = "prisma-client-js"
+    output = "../node_modules/.prisma/client"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  String    @id @default(cuid())
+  email               String    @unique
+  password            String
+  name                String?
+  createdAt           DateTime  @default(now())
+  
+  // Subscription fields
+  stripeCustomerId    String?   @unique
+  stripeSubscriptionId String?  @unique
+  stripePriceId       String?
+  stripeCurrentPeriodEnd DateTime?
+  subscriptionStatus  String?
+  subscriptionPlan    String?
+  
+  // Trial fields
+  trialEndsAt         DateTime?
+  trialUsed           Boolean   @default(false)
+  trialStartDate      DateTime?
+  
+  // Gamification fields
+  level               Int       @default(1)
+  xp                  Int       @default(0)
+  streak              Int       @default(0)
+  lastActivityDate    DateTime?
+  firstName           String?
+  lastName            String?
+  
+  // New gamification fields
+  crystals            Int       @default(0)        // Cristais Lunares
+  equippedTitle       String?                      // Título equipado
+  equippedFrame       String?                      // Moldura equipada
+  equippedAura        String?                      // Aura equipada
+  username            String?   @unique            // Username único
+  bio                 String?                      // Bio do perfil
+  avatarUrl           String?                      // URL do avatar
+  profilePublic       Boolean   @default(true)     // Perfil público
+  showInRanking       Boolean   @default(true)     // Mostrar no ranking
+  
+  // Notifications
+  notificationPreferences NotificationPreferences?
+  notificationSubscription String?
+  
+  readings            Reading[]
+  notifications       Notification[]
+  notificationMetrics NotificationMetrics[]
+  courseProgress      UserCourseProgress[]
+  lessonProgress      UserLessonProgress[]
+  badges              UserBadge[]
+  dailyChallenges     UserDailyChallenge[]
+  missions            UserMission[]
+  inventory           UserInventory[]
+  leaderboardEntries  LeaderboardEntry[]
+  leagueHistory        UserLeagueHistory[]
+  userExercises       UserExercise[]
+  photoReadings       PhotoReading[]
+  practiceSessions    PracticeSession[]
+  journalEntries      JournalEntry[]
+  
+  @@map("users")
+}
+
+model TarotCard {
+  id              String        @id @default(cuid())
+  name            String        @unique
+  number          Int?
+  arcana          String
+  suit            String?
+  shortMeaning    String       
+  upright         String       
+  reversed        String       
+  imageUrl        String
+  
+  readingCards    ReadingCard[]
+  
+  @@map("tarot_cards")
+}
+
+model Reading {
+  id             String        @id @default(cuid())
+  userId         String
+  user           User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  spreadType     String
+  question       String?
+  interpretation String       
+  photoUrl       String?
+  createdAt      DateTime      @default(now())
+  cards          ReadingCard[]
+  journalEntries JournalEntry[]
+  
+  @@map("readings")
+  @@index([userId])
+}
+
+model ReadingCard {
+  id         String     @id @default(cuid())
+  readingId  String
+  reading    Reading    @relation(fields: [readingId], references: [id], onDelete: Cascade)
+  cardId     String
+  card       TarotCard  @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  position   Int
+  isReversed Boolean    @default(false)
+  createdAt  DateTime   @default(now())
+  
+  @@map("reading_cards")
+  @@index([readingId])
+}
+
+model NotificationPreferences {
+  id                  String   @id @default(cuid())
+  userId              String   @unique
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  // Frequency
+  morning             Boolean  @default(true)
+  afternoon           Boolean  @default(true)
+  evening             Boolean  @default(true)
+  
+  // Types
+  dailyCard           Boolean  @default(true)
+  insights            Boolean  @default(true)
+  challenges          Boolean  @default(true)
+  reminders           Boolean  @default(true)
+  
+  enabled             Boolean  @default(true)
+  
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+  
+  @@map("notification_preferences")
+}
+
+model Notification {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  title       String
+  message     String  
+  body        String? 
+  type        String
+  cardId      String?
+  data        String? 
+  
+  sent        Boolean  @default(false)
+  sentAt      DateTime?
+  clicked     Boolean  @default(false)
+  clickedAt   DateTime?
+  
+  createdAt   DateTime @default(now())
+  
+  @@map("notifications")
+  @@index([userId])
+  @@index([sent])
+}
+
+model NotificationMetrics {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  date            DateTime @default(now())
+  sent            Int      @default(0)
+  clicked         Int      @default(0)
+  readingsCreated Int      @default(0)
+  
+  @@map("notification_metrics")
+  @@index([userId])
+  @@index([date])
+}
+
+model NotificationSubscription {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  subscriptionId  String   @unique
+  endpoint        String
+  keys            String  
+  createdAt       DateTime @default(now())
+  
+  @@map("notification_subscriptions")
+}
+
+// ========================================
+// EDUCATION & COURSES MODELS
+// ========================================
+
+model Oracle {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  description String
+  icon        String?
+  imageUrl    String?
+  available   Boolean   @default(false)
+  order       Int       @default(0)
+  createdAt   DateTime  @default(now())
+  
+  courses     Course[]
+  
+  @@map("oracles")
+}
+
+model Course {
+  id          String    @id @default(cuid())
+  oracleId    String
+  oracle      Oracle    @relation(fields: [oracleId], references: [id], onDelete: Cascade)
+  
+  title       String
+  slug        String    @unique
+  description String
+  imageUrl    String?
+  duration    String?   // e.g., "4 semanas", "10 horas"
+  level       String    @default("beginner") // beginner, intermediate, advanced
+  order       Int       @default(0)
+  published   Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  
+  modules     Module[]
+  userProgress UserCourseProgress[]
+  
+  @@map("courses")
+  @@index([oracleId])
+}
+
+model Module {
+  id          String    @id @default(cuid())
+  courseId    String
+  course      Course    @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  
+  title       String
+  slug        String
+  description String?
+  order       Int
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  
+  lessons     Lesson[]
+  
+  @@map("modules")
+  @@index([courseId])
+  @@unique([courseId, slug])
+}
+
+model Lesson {
+  id          String    @id @default(cuid())
+  moduleId    String
+  module      Module    @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  
+  title       String
+  slug        String
+  content     String    // Markdown content
+  videoUrl    String?
+  duration    Int?      // Duration in minutes
+  order       Int
+  xpReward    Int       @default(50)
+  published   Boolean   @default(true)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  
+  userProgress UserLessonProgress[]
+  exercises   Exercise[]
+  
+  @@map("lessons")
+  @@index([moduleId])
+  @@unique([moduleId, slug])
+}
+
+model Exercise {
+  id          String    @id @default(cuid())
+  lessonId    String?
+  lesson      Lesson?   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  
+  title       String
+  description String?
+  type        String    // quiz, guided_reading, photo_upload, interpretation, card_identification
+  category    String    @default("beginner") // beginner, intermediate, advanced
+  difficulty  String    @default("beginner")
+  oracleType  String    @default("tarot") // tarot, cigano, runas, iching
+  
+  content     String    // JSON with exercise data
+  
+  xpReward    Int       @default(30)
+  crystalReward Int     @default(5)
+  timeLimit   Int?      // Tempo limite em segundos
+  minScore    Int       @default(70) // Pontuação mínima para passar
+  
+  active      Boolean   @default(true)
+  order       Int       @default(0)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  
+  userExercises UserExercise[]
+  
+  @@map("exercises")
+  @@index([lessonId])
+  @@index([type])
+  @@index([category])
+  @@index([active])
+}
+
+model UserCourseProgress {
+  id              String    @id @default(cuid())
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  courseId        String
+  course          Course    @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  
+  startedAt       DateTime  @default(now())
+  completedAt     DateTime?
+  lastAccessedAt  DateTime  @default(now())
+  progressPercent Int       @default(0)
+  
+  @@map("user_course_progress")
+  @@unique([userId, courseId])
+  @@index([userId])
+  @@index([courseId])
+}
+
+model UserLessonProgress {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lessonId    String
+  lesson      Lesson    @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  
+  completed   Boolean   @default(false)
+  completedAt DateTime?
+  xpEarned    Int       @default(0)
+  createdAt   DateTime  @default(now())
+  
+  @@map("user_lesson_progress")
+  @@unique([userId, lessonId])
+  @@index([userId])
+  @@index([lessonId])
+}
+
+// ========================================
+// GAMIFICATION MODELS - ENHANCED
+// ========================================
+
+model Badge {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  description String
+  icon        String
+  imageUrl    String?                      // URL da imagem do badge
+  category    String    @default("general") // streak, study, practice, special
+  rarity      String    @default("common")  // common, rare, epic, legendary
+  requirement String                        // JSON with requirement data
+  xpReward    Int       @default(0)
+  crystalReward Int     @default(0)        // Recompensa em cristais
+  order       Int       @default(0)
+  createdAt   DateTime  @default(now())
+  
+  userBadges  UserBadge[]
+  
+  @@map("badges")
+}
+
+model UserBadge {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  badgeId     String
+  badge       Badge     @relation(fields: [badgeId], references: [id], onDelete: Cascade)
+  
+  earnedAt    DateTime  @default(now())
+  
+  @@map("user_badges")
+  @@unique([userId, badgeId])
+  @@index([userId])
+  @@index([badgeId])
+}
+
+// ========================================
+// DAILY CHALLENGES SYSTEM
+// ========================================
+
+model DailyChallenge {
+  id          String    @id @default(cuid())
+  date        DateTime  @default(now())
+  type        String    // reflection, identification, interpretation, symbolism, practice
+  title       String
+  description String
+  cardId      String?   // ID da carta relacionada (se aplicável)
+  question    String?   // Pergunta reflexiva
+  options     String?   // JSON com opções (para múltipla escolha)
+  correctAnswer String? // Resposta correta (para validação)
+  xpReward    Int       @default(100)
+  crystalReward Int     @default(0)
+  
+  userChallenges UserDailyChallenge[]
+  
+  @@map("daily_challenges")
+  @@index([date])
+}
+
+model UserDailyChallenge {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  challengeId String
+  challenge   DailyChallenge @relation(fields: [challengeId], references: [id], onDelete: Cascade)
+  
+  completed   Boolean   @default(false)
+  completedAt DateTime?
+  userAnswer  String?   // Resposta do usuário
+  aiFeedback  String?   // Feedback da IA
+  xpEarned    Int       @default(0)
+  crystalsEarned Int    @default(0)
+  
+  @@map("user_daily_challenges")
+  @@unique([userId, challengeId])
+  @@index([userId])
+  @@index([challengeId])
+}
+
+// ========================================
+// MISSIONS SYSTEM
+// ========================================
+
+model Mission {
+  id          String    @id @default(cuid())
+  type        String    // daily, weekly, achievement
+  category    String    // practice, study, streak, collection
+  title       String
+  description String
+  requirement String    // JSON with requirement data
+  xpReward    Int       @default(0)
+  crystalReward Int     @default(0)
+  badgeReward String?   // Badge slug (se aplicável)
+  order       Int       @default(0)
+  active      Boolean   @default(true)
+  startDate   DateTime?
+  endDate     DateTime?
+  createdAt   DateTime  @default(now())
+  
+  userMissions UserMission[]
+  
+  @@map("missions")
+  @@index([type])
+  @@index([active])
+}
+
+model UserMission {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  missionId   String
+  mission     Mission   @relation(fields: [missionId], references: [id], onDelete: Cascade)
+  
+  progress    Int       @default(0)    // Progresso atual
+  target      Int       @default(1)    // Meta a atingir
+  completed   Boolean   @default(false)
+  completedAt DateTime?
+  xpEarned    Int       @default(0)
+  crystalsEarned Int    @default(0)
+  startedAt   DateTime  @default(now())
+  
+  @@map("user_missions")
+  @@unique([userId, missionId])
+  @@index([userId])
+  @@index([missionId])
+}
+
+// ========================================
+// SHOP & INVENTORY SYSTEM
+// ========================================
+
+model ShopItem {
+  id          String    @id @default(cuid())
+  type        String    // deck_skin, theme, frame, title, aura, boost, protection, lesson, oracle
+  category    String    // cosmetic, benefit, content, special
+  name        String    @unique
+  slug        String    @unique
+  description String
+  imageUrl    String?
+  price       Int       // Preço em cristais
+  rarity      String    @default("common") // common, rare, epic, legendary
+  discount    Int       @default(0)        // Desconto percentual
+  limited     Boolean   @default(false)    // Item limitado
+  seasonal    Boolean   @default(false)    // Item sazonal
+  available   Boolean   @default(true)
+  metadata    String?   // JSON com dados específicos do item
+  order       Int       @default(0)
+  createdAt   DateTime  @default(now())
+  
+  inventory   UserInventory[]
+  
+  @@map("shop_items")
+  @@index([type])
+  @@index([category])
+}
+
+model UserInventory {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  itemId      String
+  item        ShopItem  @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  
+  equipped    Boolean   @default(false)   // Item equipado
+  purchasedAt DateTime  @default(now())
+  
+  @@map("user_inventory")
+  @@unique([userId, itemId])
+  @@index([userId])
+  @@index([itemId])
+}
+
+
+// ========================================
+// RANKING & LEADERBOARD SYSTEM
+// ========================================
+
+model LeaderboardEntry {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  // Tipo de ranking
+  type      String   // GLOBAL, WEEKLY, MONTHLY
+  category  String   // XP, STREAK, READINGS, BADGES
+  
+  // Dados do ranking
+  score     Int      // Pontuação (XP, dias de streak, etc)
+  rank      Int      // Posição no ranking
+  league    String   @default("BRONZE") // BRONZE, SILVER, GOLD, PLATINUM, DIAMOND
+  
+  // Metadados
+  season    String   // "2025-W44" para semanal, "2025-10" para mensal, "all-time" para global
+  metadata  String?  // JSON com dados extras (nome, avatar, badges, etc)
+  
+  // Timestamps
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@map("leaderboard_entries")
+  @@unique([userId, type, category, season])
+  @@index([type, category, season, rank])
+  @@index([userId])
+  @@index([season])
+}
+
+model LeaderboardReward {
+  id          String   @id @default(cuid())
+  type        String   // WEEKLY, MONTHLY
+  category    String   // XP, STREAK, READINGS, BADGES
+  season      String   // "2025-W44" ou "2025-10"
+  
+  // Critérios
+  minRank     Int      // Rank mínimo (ex: 1)
+  maxRank     Int      // Rank máximo (ex: 10)
+  
+  // Recompensas
+  xpReward    Int      @default(0)
+  crystalReward Int    @default(0)
+  badgeReward String?  // Badge slug
+  titleReward String?  // Título especial
+  
+  // Status
+  distributed Boolean  @default(false)
+  distributedAt DateTime?
+  
+  createdAt   DateTime @default(now())
+  
+  @@map("leaderboard_rewards")
+  @@index([type, category, season])
+  @@index([distributed])
+}
+
+model UserLeagueHistory {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  season    String   // "2025-W44"
+  league    String   // BRONZE, SILVER, GOLD, PLATINUM, DIAMOND
+  finalRank Int      // Posição final na temporada
+  promoted  Boolean  @default(false) // Subiu de liga
+  demoted   Boolean  @default(false) // Desceu de liga
+  
+  // Recompensas recebidas
+  xpEarned  Int      @default(0)
+  crystalsEarned Int @default(0)
+  
+  createdAt DateTime @default(now())
+  
+  @@map("user_league_history")
+  @@index([userId])
+  @@index([season])
+}
+
+
+// ========================================
+// USER EXERCISE PROGRESS
+// ========================================
+
+model UserExercise {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  exerciseId  String
+  exercise    Exercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  
+  // Progresso
+  status      String   @default("NOT_STARTED") // NOT_STARTED, IN_PROGRESS, COMPLETED, FAILED
+  score       Int      @default(0) // Pontuação (0-100)
+  attempts    Int      @default(0)
+  
+  // Dados da tentativa (JSON)
+  userAnswers String?  // Respostas do usuário
+  aiFeedback  String?  // Feedback da IA
+  
+  // Recompensas recebidas
+  xpEarned    Int      @default(0)
+  crystalsEarned Int   @default(0)
+  
+  // Timestamps
+  startedAt   DateTime?
+  completedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@map("user_exercises")
+  @@unique([userId, exerciseId])
+  @@index([userId])
+  @@index([exerciseId])
+  @@index([status])
+}
+
+model PhotoReading {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  // Imagem
+  photoUrl    String   // URL da foto no S3
+  
+  // Cartas identificadas (JSON)
+  identifiedCards String? // Array de cartas identificadas via OCR
+  
+  // Interpretação do usuário
+  userInterpretation String?
+  
+  // Feedback da IA
+  aiFeedback  String?
+  aiScore     Int?     // Pontuação dada pela IA (0-100)
+  
+  // Recompensas
+  xpEarned    Int      @default(0)
+  crystalsEarned Int   @default(0)
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@map("photo_readings")
+  @@index([userId])
+}
+
+model PracticeSession {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  type        String   // QUIZ, GUIDED_READING, PHOTO_UPLOAD
+  
+  // Dados da sessão (JSON)
+  sessionData String   // Perguntas, respostas, interações com IA
+  
+  // Resultados
+  totalScore  Int      @default(0)
+  totalXP     Int      @default(0)
+  totalCrystals Int    @default(0)
+  
+  // Duração
+  duration    Int?     // Duração em segundos
+  
+  startedAt   DateTime @default(now())
+  completedAt DateTime?
+  
+  @@map("practice_sessions")
+  @@index([userId])
+  @@index([type])
+}
+
+model JournalEntry {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  title       String
+  content     String   @db.Text
+  mood        String?  // Emoji ou texto representando o humor
+  
+  // Opcional: vincular a uma leitura
+  readingId   String?
+  reading     Reading? @relation(fields: [readingId], references: [id], onDelete: SetNull)
+  
+  // Tags para categorização
+  tags        String?  // JSON array de tags
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@map("journal_entries")
+  @@index([userId])
+  @@index([createdAt])
+}

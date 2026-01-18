@@ -1,0 +1,54 @@
+import { PrismaClient } from '@prisma/client'
+import bcrypt from 'bcryptjs'
+import { allCards } from '../lib/tarot-data'
+
+const prisma = new PrismaClient()
+
+async function main() {
+  console.log('Starting database seed...')
+
+  // Create admin user
+  const hashedPassword = await bcrypt.hash('johndoe123', 12)
+  const user = await prisma.user.upsert({
+    where: { email: 'john@doe.com' },
+    update: {},
+    create: {
+      email: 'john@doe.com',
+      password: hashedPassword,
+      name: 'John Doe',
+      trialEndsAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+      trialUsed: false,
+    },
+  })
+  console.log(`✅ Created user: ${user.email}`)
+
+  // Create all tarot cards from tarot-data.ts
+  for (const card of allCards) {
+    await prisma.tarotCard.upsert({
+      where: { name: card.name },
+      update: {},
+      create: {
+        name: card.name,
+        number: card.number,
+        arcana: card.arcana,
+        suit: card.suit || null,
+        shortMeaning: card.shortMeaning,
+        upright: card.upright,
+        reversed: card.reversed,
+        imageUrl: card.imageUrl,
+      },
+    })
+  }
+  
+  console.log(`✅ Created ${allCards.length} tarot cards`)
+  console.log('\n🎉 Database seeded successfully!')
+}
+
+main()
+  .catch((e) => {
+    console.error(e)
+    process.exit(1)
+  })
+  .finally(async () => {
+    await prisma.$disconnect()
+  })

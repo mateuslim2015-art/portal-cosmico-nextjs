@@ -1,0 +1,156 @@
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Progress: resolved 34, reused 1, downloaded 27, added 0
+Progress: resolved 82, reused 4, downloaded 67, added 0
+Progress: resolved 109, reused 6, downloaded 101, added 0
+Progress: resolved 137, reused 13, downloaded 117, added 0
+Progress: resolved 215, reused 37, downloaded 166, added 0
+Progress: resolved 329, reused 52, downloaded 258, added 0
+Progress: resolved 430, reused 58, downloaded 340, added 0
+Progress: resolved 581, reused 110, downloaded 424, added 0
+Progress: resolved 682, reused 137, downloaded 480, added 0
+Progress: resolved 776, reused 146, downloaded 559, added 0
+Progress: resolved 983, reused 212, downloaded 678, added 0
+ WARN  1 deprecated subdependencies found: mumath@3.3.4
+Progress: resolved 1172, reused 270, downloaded 825, added 0
+Packages: +1117
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1172, reused 270, downloaded 852, added 501
+Progress: resolved 1172, reused 270, downloaded 852, added 1117, done
+ WARN  Issues with peer dependencies found
+.
+├─┬ @typescript-eslint/parser 7.0.0
+│ └── ✕ unmet peer eslint@^8.56.0: found 9.24.0
+├─┬ @typescript-eslint/eslint-plugin 7.0.0
+│ ├── ✕ unmet peer eslint@^8.56.0: found 9.24.0
+│ ├── ✕ unmet peer @typescript-eslint/parser@"^6.0.0 || ^6.0.0-alpha": found 7.0.0
+│ └─┬ @typescript-eslint/type-utils 7.0.0
+│   ├── ✕ unmet peer eslint@^8.56.0: found 9.24.0
+│   └─┬ @typescript-eslint/utils 7.0.0
+│     └── ✕ unmet peer eslint@^8.56.0: found 9.24.0
+└─┬ eslint-plugin-react-hooks 4.6.0
+  └── ✕ unmet peer eslint@"^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0": found 9.24.0
+
+dependencies:
++ @aws-sdk/client-s3 3.919.0
++ @aws-sdk/s3-request-presigner 3.919.0
++ @floating-ui/react 0.26.0 (0.27.16 is available)
++ @headlessui/react 1.7.18 (2.2.9 is available)
++ @hookform/resolvers 3.9.0 (5.2.2 is available)
++ @next-auth/prisma-adapter 1.0.7
++ @prisma/client 6.7.0 (6.18.0 is available)
++ @radix-ui/react-accordion 1.2.0 (1.2.12 is available)
++ @radix-ui/react-alert-dialog 1.1.1 (1.1.15 is available)
++ @radix-ui/react-aspect-ratio 1.1.0 (1.1.7 is available)
++ @radix-ui/react-avatar 1.1.0 (1.1.10 is available)
++ @radix-ui/react-checkbox 1.1.1 (1.3.3 is available)
++ @radix-ui/react-collapsible 1.1.0 (1.1.12 is available)
++ @radix-ui/react-context-menu 2.2.1 (2.2.16 is available)
++ @radix-ui/react-dialog 1.1.1 (1.1.15 is available)
++ @radix-ui/react-dropdown-menu 2.1.1 (2.1.16 is available)
++ @radix-ui/react-hover-card 1.1.1 (1.1.15 is available)
++ @radix-ui/react-label 2.1.0 (2.1.7 is available)
++ @radix-ui/react-menubar 1.1.1 (1.1.16 is available)
++ @radix-ui/react-navigation-menu 1.2.0 (1.2.14 is available)
++ @radix-ui/react-popover 1.1.1 (1.1.15 is available)
++ @radix-ui/react-progress 1.1.0 (1.1.7 is available)
++ @radix-ui/react-radio-group 1.2.0 (1.3.8 is available)
++ @radix-ui/react-scroll-area 1.1.0 (1.2.10 is available)
++ @radix-ui/react-select 2.1.1 (2.2.6 is available)
++ @radix-ui/react-separator 1.1.0 (1.1.7 is available)
++ @radix-ui/react-slider 1.2.0 (1.3.6 is available)
++ @radix-ui/react-slot 1.1.0 (1.2.3 is available)
++ @radix-ui/react-switch 1.1.0 (1.2.6 is available)
++ @radix-ui/react-tabs 1.1.0 (1.1.13 is available)
++ @radix-ui/react-toast 1.2.1 (1.2.15 is available)
++ @radix-ui/react-toggle 1.1.0 (1.1.10 is available)
++ @radix-ui/react-toggle-group 1.1.0 (1.1.11 is available)
++ @radix-ui/react-tooltip 1.1.2 (1.2.8 is available)
++ @stripe/stripe-js 8.2.0
++ @tanstack/react-query 5.0.0 (5.90.5 is available)
++ @types/bcryptjs 2.4.6 (3.0.0 is available)
++ @types/jsonwebtoken 9.0.5 (9.0.10 is available)
++ @types/node-cron 3.0.11
++ @types/plotly.js 2.35.5 (3.0.8 is available)
++ @types/react-plotly.js 2.6.3
++ autoprefixer 10.4.15 (10.4.21 is available)
++ bcryptjs 2.4.3 (3.0.2 is available)
++ chart.js 4.4.9 (4.5.1 is available)
++ class-variance-authority 0.7.0 (0.7.1 is available)
++ clsx 2.1.1
++ cmdk 1.0.0 (1.1.1 is available)
++ cookie 1.0.2
++ csv 6.3.11 (6.4.1 is available)
++ date-fns 3.6.0 (4.1.0 is available)
++ dayjs 1.11.13 (1.11.18 is available)
++ dotenv 16.5.0 (17.2.3 is available)
++ embla-carousel-react 8.3.0 (8.6.0 is available)
++ formik 2.4.5 (2.4.6 is available)
++ framer-motion 10.18.0 (12.23.24 is available)
++ gray-matter 4.0.3
++ input-otp 1.2.4 (1.4.2 is available)
++ jotai 2.6.0 (2.15.0 is available)
++ jsonwebtoken 9.0.2
++ lodash 4.17.21
++ lucide-react 0.446.0 (0.548.0 is available)
++ mapbox-gl 1.13.3 (3.16.0 is available)
++ next 14.2.28 (16.0.1 is available)
++ next-auth 4.24.11 (4.24.12 is available)
++ next-themes 0.3.0 (0.4.6 is available)
++ node-cron 4.2.1
++ plotly.js 2.35.3 (3.1.2 is available)
++ react 18.2.0 (19.2.0 is available)
++ react-chartjs-2 5.3.0 (5.3.1 is available)
++ react-datepicker 6.1.0 (8.8.0 is available)
++ react-day-picker 8.10.1 (9.11.1 is available)
++ react-dom 18.2.0 (19.2.0 is available)
++ react-hook-form 7.53.0 (7.65.0 is available)
++ react-hot-toast 2.4.1 (2.6.0 is available)
++ react-intersection-observer 9.8.0 (10.0.0 is available)
++ react-is 18.3.1 (19.2.0 is available)
++ react-plotly.js 2.6.0
++ react-resizable-panels 2.1.3 (3.0.6 is available)
++ react-select 5.8.0 (5.10.2 is available)
++ react-use 17.6.0
++ recharts 2.15.3 (3.3.0 is available)
++ sonner 1.5.0 (2.0.7 is available)
++ stripe 19.1.0
++ swr 2.2.4 (2.3.6 is available)
++ tailwind-scrollbar-hide 1.1.7 (4.0.0 is available)
++ vaul 0.9.9 (1.1.2 is available)
++ web-push 3.6.7
++ webpack 5.99.5 (5.102.1 is available)
++ yup 1.3.0 (1.7.1 is available)
++ zod 3.23.8 (4.1.12 is available)
++ zustand 5.0.3 (5.0.8 is available)
+
+devDependencies:
++ @next/swc-wasm-nodejs 13.5.1 (16.0.1 is available)
++ @types/node 20.6.2 (24.9.2 is available)
++ @types/react 18.2.22 (19.2.2 is available)
++ @types/react-dom 18.2.7 (19.2.2 is available)
++ @types/web-push 3.6.4
++ @typescript-eslint/eslint-plugin 7.0.0 (8.46.2 is available)
++ @typescript-eslint/parser 7.0.0 (8.46.2 is available)
++ eslint 9.24.0 (9.38.0 is available)
++ eslint-config-next 15.3.0 (16.0.1 is available)
++ eslint-plugin-prettier 5.1.3 (5.5.4 is available)
++ eslint-plugin-react-hooks 4.6.0 (7.0.1 is available)
++ postcss 8.4.30 (8.5.6 is available)
++ prisma 6.7.0 (6.18.0 is available)
++ tailwind-merge 2.5.2 (3.3.1 is available)
++ tailwindcss 3.3.3 (4.1.16 is available)
++ tailwindcss-animate 1.0.7
++ ts-node 10.9.2
++ tsx 4.20.3 (4.20.6 is available)
++ typescript 5.2.2 (5.9.3 is available)
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: @prisma/client, @prisma/engines, es5-ext,           │
+│   esbuild, prisma, unrs-resolver.                                            │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Done in 16.5s using pnpm v10.20.0
