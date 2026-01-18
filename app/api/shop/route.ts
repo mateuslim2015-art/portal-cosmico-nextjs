@@ -11,7 +11,6 @@ const prisma = new PrismaClient();
  * GET /api/shop
  * Retorna todos os itens da loja com status de compra do usuário
  */
-export const dynamic = 'force-dynamic';
 
 export async function GET(request: NextRequest) {
   try {

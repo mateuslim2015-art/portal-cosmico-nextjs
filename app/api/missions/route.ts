@@ -11,7 +11,6 @@ const prisma = new PrismaClient();
  * GET /api/missions
  * Retorna todas as missões (diárias, semanais e conquistas) com progresso do usuário
  */
-export const dynamic = 'force-dynamic';
 
 export async function GET(request: NextRequest) {
   try {

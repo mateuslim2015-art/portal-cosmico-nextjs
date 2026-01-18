@@ -12,7 +12,6 @@ const prisma = new PrismaClient();
  * GET /api/daily-challenge
  * Retorna o desafio diário atual e o progresso do usuário
  */
-export const dynamic = 'force-dynamic';
 
 export async function GET(request: NextRequest) {
   try {

@@ -8,7 +8,6 @@ import { getUserBadges, checkAndUnlockBadges } from '@/lib/badge-service';
 
 const prisma = new PrismaClient();
 
-export const dynamic = 'force-dynamic';
 
 /**
  * GET /api/badges
