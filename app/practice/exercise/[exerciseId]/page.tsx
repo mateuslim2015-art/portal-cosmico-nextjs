@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import ExerciseClient from './exercise-client';
-import prisma from '@/lib/db';
+import { prisma } from '@/lib/db';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { redirect } from 'next/navigation';

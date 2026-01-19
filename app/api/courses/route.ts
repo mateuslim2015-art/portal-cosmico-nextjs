@@ -41,6 +41,12 @@ export async function GET(request: NextRequest) {
             lessons: {
               select: {
                 id: true,
+                userProgress: {
+                  where: {
+                    userId: session.user.id,
+                    completed: true,
+                  },
+                },
               },
             },
           },
@@ -60,7 +66,10 @@ export async function GET(request: NextRequest) {
         (sum, module) => sum + module.lessons.length,
         0
       )
-      const completedLessons = course.userProgress[0]?.completedLessons || 0
+      const completedLessons = course.modules.reduce(
+        (sum, module) => sum + module.lessons.filter(lesson => lesson.userProgress.length > 0).length,
+        0
+      )
       const progress = totalLessons > 0 ? (completedLessons / totalLessons) * 100 : 0
 
       return {
